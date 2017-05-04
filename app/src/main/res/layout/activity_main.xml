@@ -4,15 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/stadium"
+
     tools:context="com.homestadium.homestadium.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/MainTitle"
+        android:layout_width="324dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="214dp"
+        android:fontFamily="cursive"
+        android:background="#859EA6A5"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="@string/mainTitle"
+        android:textColor="#FFC50D"
+        android:textSize="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.512" />
 
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="153dp"
+        android:layout_height="51dp"
+        android:text="@string/buttonSignup"
+        android:background="#0C1561"
+        android:textColor="#FFF"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="281dp"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_marginRight="8dp"
+        android:textColor="#FFF"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        android:onClick="loginActivity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="84dp"
+        app:layout_constraintTop_toBottomOf="@+id/MainTitle" />
 </android.support.constraint.ConstraintLayout>
