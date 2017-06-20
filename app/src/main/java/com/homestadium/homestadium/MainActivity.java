@@ -25,6 +25,12 @@ public class MainActivity extends Activity {
         startActivity(new Intent(getApplicationContext(), LoginActivity.class));
     }
 
+    public void CreateAccountActivity(View view){
+        startActivity(new Intent(getApplicationContext(), CreateAccountActivity.class));
+    }
+
+
+
 
 
 

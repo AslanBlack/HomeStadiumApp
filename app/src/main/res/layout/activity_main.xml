@@ -32,6 +32,7 @@
         android:layout_width="153dp"
         android:layout_height="51dp"
         android:text="@string/buttonSignup"
+        android:onClick="CreateAccountActivity"
         android:background="#0C1561"
         android:textColor="#FFF"
         android:layout_marginRight="8dp"
